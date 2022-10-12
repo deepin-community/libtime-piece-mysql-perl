@@ -1,0 +1,74 @@
+libtime-piece-mysql-perl (0.06-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 14:36:25 +0100
+
+libtime-piece-mysql-perl (0.06-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ gregor herrmann ]
+  * debian/control: remove (build) dependency on libtime-piece-perl,
+    Time::Piece is in perl core since 5.9.5.
+    Closes: #637736
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * Switch to source format 3.0 (quilt).
+  * Use tiny debian/rules and switch to debhelper 8.
+  * debian/copyright: use DEP5 formatting.
+  * Set Standards-Version to 3.9.2 (no changes).
+  * debian/control: improve long and short description.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 14 Aug 2011 01:24:49 +0200
+
+libtime-piece-mysql-perl (0.06-1) unstable; urgency=low
+
+  [ Damyan Ivanov ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Ben Hutchings
+    <ben@decadentplace.org.uk>); Ben Hutchings
+    <ben@decadentplace.org.uk> moved to Uploaders.
+  * Add debian/watch.
+  * remove Homepage from long description; Homepage: field already
+    present
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Revert the directly applied fix for MySQL 4.1+, fixed upstream.
+  * Refresh debian/rules, no functional changes, except: don't install README
+    any more.
+  * Set Standards-Version to 3.8.0 (no changes).
+  * Add /me to Uploaders.
+  * Set debhelper compatibility level to 5.
+  * Move debhelper to Build-Depends (used in clean target).
+  * debian/copyright: use author-independent upstream source location.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 20 Jun 2008 21:26:19 +0200
+
+libtime-piece-mysql-perl (0.05-2) unstable; urgency=low
+
+  * Handle MySQL 4.1+ timestamp format correctly - closes: #379607
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri,  6 Oct 2006 23:38:27 +0100
+
+libtime-piece-mysql-perl (0.05-1) unstable; urgency=low
+
+  * Initial release - closes: #347309
+
+ -- Ben Hutchings <ben@decadentplace.org.uk>  Sun, 01 Jan 2006 19:37:14 +0000

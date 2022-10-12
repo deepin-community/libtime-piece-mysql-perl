@@ -1,0 +1,19 @@
+Source: libtime-piece-mysql-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ben Hutchings <ben@decadentplace.org.uk>,
+ gregor herrmann <gregoa@debian.org>
+Section: perl
+Priority: extra
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.2
+Homepage: http://search.cpan.org/dist/Time-Piece-MySQL/
+Vcs-Git: git://git.debian.org/pkg-perl/packages/libtime-piece-mysql-perl.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libtime-piece-mysql-perl.git
+
+Package: libtime-piece-mysql-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: module adding MySQL-specific methods to Time::Piece
+ Using Time::Piece::MySQL instead of, or in addition to, Time::Piece adds a
+ few MySQL-specific date-time methods to Time::Piece objects.

@@ -1,0 +1,2 @@
+version=3
+http://search.cpan.org/dist/Time-Piece-MySQL/  .+/Time-Piece-MySQL-v?(\d[\d.-]+)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$
